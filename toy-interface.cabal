@@ -1,0 +1,25 @@
+Name:                toy-interface
+Version:             0.3.0
+Cabal-Version:       >= 1.6
+Synopsis:            A generic interface for straightforward interactive toys
+Category:            Graphics, GUI
+Description: 
+   This is a simple interface for making applications which use the mouse and
+   keyboard.  Implementors of this interface process the input events into more
+   palatable data types.  Currently, only the gtk-toy package implements this.
+License:             BSD3
+License-file:        LICENSE
+Author:              Michael Sloan
+Maintainer:          Michael Sloan <mgsloan at gmail>
+Stability:           experimental
+Build-Type:          Simple
+Source-repository head
+  type:              git 
+  location:          git://github.com/mgsloan/toy-interactive.git
+
+Library
+  Build-Depends:     base >= 4.2 && < 4.6,
+                     mtl >= 2.0,
+                     containers
+  Hs-source-dirs:    src
+  Exposed-Modules:   Graphics.UI.Toy
