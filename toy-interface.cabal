@@ -18,7 +18,7 @@ Source-repository head
   location:          git://github.com/mgsloan/toy-interactive.git
 
 Library
-  Build-Depends:     base >= 4.2 && < 4.6,
+  Build-Depends:     base >= 4.2 && < 4.7,
                      mtl >= 2.0,
                      containers
   Hs-source-dirs:    src
