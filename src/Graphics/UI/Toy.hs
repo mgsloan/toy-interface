@@ -1,7 +1,8 @@
-{-# LANGUAGE MultiParamTypeClasses,
-             TypeFamilies,
-             TupleSections,
-             ViewPatterns
+{-# LANGUAGE
+    MultiParamTypeClasses
+  , TypeFamilies
+  , TupleSections
+  , ViewPatterns
   #-}
 -----------------------------------------------------------------------------
 -- |
@@ -36,8 +37,8 @@ module Graphics.UI.Toy
   , handleKeys
   ) where
 
-import Control.Monad (when, liftM)
-import Control.Monad.State (StateT, execStateT, get, put, lift)
+import Control.Monad       ( when, liftM )
+import Control.Monad.State ( StateT, execStateT, get, put, lift )
 import qualified Data.Map as M
 
 type family MousePos b :: *
