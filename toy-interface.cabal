@@ -15,7 +15,7 @@ Stability:           experimental
 Build-Type:          Simple
 Source-repository head
   type:              git 
-  location:          git://github.com/mgsloan/toy-interactive.git
+  location:          git://github.com/mgsloan/toy-interface.git
 
 Library
   Build-Depends:     base >= 4.2 && < 4.7,

@@ -15,7 +15,8 @@
 --
 -- This is a simple interface for making applications which use the mouse and
 -- keyboard.  Implementors of this interface process the input events into more
--- palatable data types.  Currently, only the gtk-toy package implements it.
+-- palatable data types.  Currently, only the gtk-toy package implements it
+-- ("Graphics.UI.Toy.Gtk")
 --
 -----------------------------------------------------------------------------
 module Graphics.UI.Toy
