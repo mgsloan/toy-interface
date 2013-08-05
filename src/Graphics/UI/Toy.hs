@@ -7,7 +7,7 @@
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Graphics.UI.Toy
--- Copyright   :  (c) 2012 Michael Sloan 
+-- Copyright   :  (c) 2012 Michael Sloan
 -- License     :  BSD-style (see the LICENSE file)
 -- Maintainer  :  Michael Sloan <mgsloan@gmail.com>
 -- Stability   :  experimental
@@ -55,7 +55,7 @@ type KeyInfo b = (Bool, Int, [KeyModifier b])
 --   it was last seen being pressed.
 type KeyTable b = M.Map String (KeyInfo b)
 
-data InputState b = InputState 
+data InputState b = InputState
   { mousePos :: MousePos b -- ^ The most recent mouse position.
   , keyTable :: KeyTable b -- ^ Map from key-name to most recent event.
   }
@@ -83,7 +83,7 @@ class Interactive b a where
   -- | @mouse@ is called when the mouse moves or presses occur.
   mouse    :: MouseEvent   -> InputState b -> a -> IO a
 
-  -- | @keyboard@ is called on key-presses.  
+  -- | @keyboard@ is called on key-presses.
   keyboard :: KeyEvent     -> InputState b -> a -> IO a
 
   -- No-op defaults.
