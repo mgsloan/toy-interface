@@ -1,12 +1,22 @@
 Name:                toy-interface
 Version:             0.3.0
 Cabal-Version:       >= 1.6
-Synopsis:            A generic interface for mouse and keyboard applications.
-Category:            Graphics, GUI
+Synopsis:            A generic interface for mouse and keyboard applications
+Category:            Graphics
 Description:
-  This is a simple interface for making applications which use the mouse and
-  keyboard.  Implementors of this interface process the input events into more
-  palatable data types.  Currently, only the toy-gtk package implements this.
+  This is a simple, generic interface for making applications which use the
+  mouse and keyboard.  These events are transformed into nicer datatypes,
+  making it easy to ignore the details of the backend's event datatypes.
+  Coupled with a backend-independent rendering system such as diagrams, this
+  allows for backend-independent applications to be written.
+  .
+  GTK backend: <https://github.com/mgsloan/toy-gtk>
+  .
+  The name \"toy\" comes from the \"toy framework\", a part of the lib2geom
+  library (<http://lib2geom.sourceforge.net/>).  It's used in building \"toys\"
+  demonstrating the features of the library.  This is a different variety of
+  \"TDD\"- but instead of tests, it's toys! We found that building little demos
+  to be a nice way to drive initial design / development.
 License:             BSD3
 License-file:        LICENSE
 Author:              Michael Sloan
